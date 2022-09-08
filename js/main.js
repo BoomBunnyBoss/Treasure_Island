@@ -9,17 +9,17 @@ let getDistance = function (event, target) {
 };
 
 let getDistanceHint = function (distance) {
-    if (distance < 10) {
+    if (distance < 30) {
         return "Неймовірно гаряче!";
-    } else if (distance < 20) {
+    } else if (distance < 50) {
         return "Дуже гаряче!"; 
-    } else if (distance < 40) {
+    } else if (distance < 100) {
         return "Гаряче!";
-    } else if (distance < 80) {
+    } else if (distance < 150) {
         return "Тепло"; 
-    } else if (distance < 160) {
+    } else if (distance < 200) {
         return "Холодно";
-    } else if (distance < 320) {
+    } else if (distance < 350) {
         return "Дуже холодно";
     } else {
         return "Замерз!"
