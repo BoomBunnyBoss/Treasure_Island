@@ -19,7 +19,7 @@ let getDistanceHint = function (distance) {
         return "Тепло"; 
     } else if (distance < 200) {
         return "Холодно";
-    } else if (distance < 350) {
+    } else if (distance < 320) {
         return "Дуже холодно";
     } else {
         return "Замерз!"
@@ -44,7 +44,7 @@ $("#map").click(function (event) {
 
     $("#distanse").text(distanceHint);
 
-    if (distance < 8) {
+    if (distance < 28) {
     alert("Ти знайшов скарб в " + clicks + " клік!");
 }
 });
